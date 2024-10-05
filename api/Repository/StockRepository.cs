@@ -56,7 +56,10 @@ namespace api.Repository
             {
                 stocks = stocks.Where(s => s.Symbol.Contains(query.Symbol));
             }
-        
+
+            if (!string.IsNullOrWhiteSpace(query.)
+
+
             return await stocks.ToListAsync();
         }
 
